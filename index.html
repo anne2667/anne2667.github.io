@@ -1,14 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Data Science</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #1e293b;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .card h2 {
+            font-size: 1.2rem;
+            margin: 15px 0 10px;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        .card a:hover {
+            background-color: #1e40af;
+        }
+    </style>
 </head>
 <body>
-    <h1>Mi Portafolio de Ciencia de Datos</h1>
-    <ul>
-        <li><a href="proyecto15.html">Proyecto 1: Análisis Exploratorio</a></li>
-        <li><a href="proyecto-11.html">Proyecto 2: Modelado Predictivo</a></li>
-        <li><a href="proyecto-12.html">Proyecto 3: Machine Learning Avanzado</a></li>
-    </ul>
+    <header>
+        <h1>Mi Portafolio de Ciencia de Datos</h1>
+        <p>Proyectos desarrollados en Machine Learning, Análisis de Datos y Visualización</p>
+    </header>
+    <div class="container">
+        <div class="projects">
+            <div class="card">
+                <img src="img/proyecto1.jpg" alt="Proyecto 1">
+                <h2>Proyecto 1: Análisis Exploratorio</h2>
+                <p>Análisis inicial de datos para encontrar patrones, relaciones y limpiar la información antes de modelar.</p>
+                <a href="proyecto15.html">Ver Proyecto</a>
+            </div>
+            <div class="card">
+                <img src="img/proyecto2.jpg" alt="Proyecto 2">
+                <h2>Proyecto 2: Modelado Predictivo</h2>
+                <p>Desarrollo y comparación de modelos de Machine Learning para predecir resultados con alta precisión.</p>
+                <a href="proyecto-11.html">Ver Proyecto</a>
+            </div>
+            <div class="card">
+                <img src="img/proyecto3.jpg" alt="Proyecto 3">
+                <h2>Proyecto 3: Machine Learning Avanzado</h2>
+                <p>Implementación de algoritmos avanzados y ajuste de hiperparámetros para maximizar el rendimiento.</p>
+                <a href="proyecto-12.html">Ver Proyecto</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
